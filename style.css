@@ -1,0 +1,136 @@
+:root {
+    --primary-Dark-cyan: hsl(158, 36%, 37%);
+    --primary-Cream: hsl(30, 38%, 92%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --heading: "Fraunces", serif;
+    --Content: "Montserrat", sans-serif;
+    --Content-weight1: 500;
+    --Content-weight2: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading);
+    font-family: var(--Content-font-size);
+    box-sizing: border-box;
+  }
+
+  body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: peachpuff;
+    font-family: var(--Content);
+
+  }
+
+  .wrapper{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-block: 80px; 
+    border-radius: 20px;
+  }
+    
+    .down{
+     background-color: white;
+     width: 100%;
+     margin: auto;
+    }
+
+    figure{
+      background-image:url("./images/image-product-mobile.jpg");
+      height: 480px;
+      width: 100%;
+    }
+
+  .perfume{
+    font-size: small;
+    letter-spacing: 10px;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  h1{
+    font-family: var(--heading);
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+    }
+
+  h2{
+    line-height: 30px;
+    font-weight: 300;
+    padding: 30px;
+    padding-top: 20px;
+    font-size: var(--Content-weight1);
+  }
+
+  .price{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .f1{
+    font-size: 40px;
+    font-weight: 500;
+    color: green;
+    font-family: var(--heading);
+  }
+
+  .f2{
+    font-size: small;
+    font-weight: 300;
+    text-decoration: line-through;
+  }
+
+  button {
+    padding: 15px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: green;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 20px;
+  }
+  
+
+  #cart{
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 700px) {
+    .wrapper{
+      margin: 60px;
+      height: 500px;
+      width: 800px;
+      border-radius: 20px;
+      flex-direction: row;
+    }
+
+    figure{
+        background-image:url("./images/image-product-desktop.jpg");
+        height: 100%;
+        border-radius: 0px;
+        background-size: cover;
+      }
+
+    .down{
+        height: 100%;
+        width: 100%;
+    }
+  }
